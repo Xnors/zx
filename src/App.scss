@@ -1,0 +1,104 @@
+/* 侧边栏样式 */
+.sidebar {
+  font-family: deyihei;
+  position: fixed;
+  /* 固定位置 */
+  left: 0;
+  /* 左侧对齐 */
+  top: 0;
+  /* 顶部对齐 */
+  width: 250px;
+  /* 侧边栏宽度 */
+  height: 100%;
+  /* 侧边栏高度 */
+  background-color: #333;
+  /* 背景颜色 */
+  color: white;
+  /* 文字颜色 */
+  overflow: auto;
+  /* 如果内容过多，则显示滚动条 */
+
+  /* display: flex;
+    flex-direction: row;
+    justify-content: space-between; */
+
+  .zx-photo {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    background-color: white;
+    margin: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+  }
+  .self-intro {
+    display: block;
+    /* 块级显示 */
+    color: white;
+    /* 链接颜色 */
+    padding: 16px;
+    /* 内边距 */
+  }
+}
+
+/* 侧边栏内的链接样式 */
+.sidebar a {
+  display: block;
+  /* 块级显示 */
+  color: white;
+  /* 链接颜色 */
+  padding: 16px;
+  /* 内边距 */
+  text-decoration: none;
+  /* 去除下划线 */
+}
+
+/* 鼠标悬停时的链接样式 */
+.sidebar a:hover {
+  background-color: #555;
+  /* 鼠标悬停时的背景颜色 */
+}
+
+/* 主要内容区域样式，确保内容不被侧边栏覆盖 */
+.main-content {
+  margin-left: 250px;
+  /* 与侧边栏宽度相同 */
+  padding: 16px;
+  /* 内边距 */
+}
+
+/* 响应式设计，当屏幕宽度小于600px时，侧边栏变为顶部导航 */
+@media screen and (max-width: 600px) {
+  .sidebar {
+    width: 100vw;
+    height: auto;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .zx-photo {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      background-color: white;
+      margin: 15px;
+    }
+    a {
+      float: left;
+    }
+  }
+  .main-content {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
