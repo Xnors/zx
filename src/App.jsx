@@ -10,8 +10,8 @@ function App() {
         </div>
       </div>
       <div class="main-content">
-        <h1>主要内容区域</h1>
-        <p>这里是网页的主要内容...</p>
+        <h1>我EMO了</h1>
+        <div className="emo-text-box">emo短文示例</div>
       </div>
     </>
   );
