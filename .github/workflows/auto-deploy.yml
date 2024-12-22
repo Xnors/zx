@@ -37,7 +37,7 @@ jobs:
 
       # 安装依赖  
       - name: 安装依赖 
-        run: yarn install
+        run: yarn
       # 打包
       - name: 打包 🔧
         run: yarn run build
