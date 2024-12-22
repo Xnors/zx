@@ -35,9 +35,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: install-yarn
+        run: npm install -g yarn
+
       # 安装依赖  
       - name: 安装依赖 
-        run: yarn
+        run: yarn install
       # 打包
       - name: 打包 🔧
         run: yarn run build
