@@ -13,8 +13,8 @@ function NotFound() {
 render(
   () => (
     <Router>
-      <Route path="/blogs/test" component={Test0} />
-      <Route path="/" component={Home} />
+      <Route path="https://xnors.us.kg/zx/blogs/test" component={Test0} />
+      <Route path="https://xnors.us.kg/zx/" component={Home} />
       <Route path="*404" component={NotFound} />
     </Router>
   ),
