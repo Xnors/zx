@@ -6,30 +6,45 @@
   <link rel="stylesheet" href="./styles/index.css" />
   <link rel="stylesheet" href="./styles/root.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
+  <script src="./lib/anime.min.js"></script>
+  <title>周夏</title>
   <script>
+    // import { anime } from './lib/anime.min.js';
     function jumpToEmo() {
       // 跳转到 ./blogs/test0.html
       window.location.href = "./blogs/test0.html";
     }
+    // 监听滚动条
+    // window.onscroll = function () {
+    //   var scrollTop = document.documentElement.scrollTop || document.body.scrollTop; // 获取滚动条距离顶部的距离
+    //   document.getElementById("sidebar").style.height = ; // 设置侧边栏的透明度
+    //   console.warn(document.getElementById("sidebar").style.height.split("px")[0]);
+    // }
   </script>
-</head>
 
 <body>
 
-  <div class="sidebar">
+  <div class="sidebar" id="sidebar">
     <div class="zx-photo">我周夏哥的帅照</div>
     <div class="self-intro">
-      自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍
+      ZXZL，笔名揽月，取自上九天揽月安徽滁州人氏，于11年 8 月 8
+      日降生人间，与文字结缘，以揽月之名书写生活万象、世间冷暖。滁州的山水为墨，岁月为笺，借文字雕琢时光，作品或清新婉约、或大气磅礴，皆为心之所向、情之所感。愿笔下故事如星芒，照亮读者心中一隅，于文学之途揽尽岁月之月，静候知音，共赴文字山海。
     </div>
   </div>
   <div class="main-content">
-    <h1>我EMO了</h1>
-    <div class="emo-text-box" onclick=jumpToEmo()>
+    <h1 style="font-size: 300%;">我EMO了</h1>
+    <div class="emo-text-box" onclick="jumpToEmo()">
+      emo短文示例
+    </div>
+    <div class="emo-text-box" onclick="jumpToEmo()">
+      emo短文示例
+    </div>
+    <div class="emo-text-box" onclick="jumpToEmo()">
+      emo短文示例
+    </div>
+    <div class="emo-text-box" onclick="jumpToEmo()">
       emo短文示例
     </div>
   </div>
 
 </body>
-
-</html>

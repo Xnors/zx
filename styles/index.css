@@ -23,6 +23,8 @@
   border-image: linear-gradient(18deg, #939afb, #b18afa) 1;
   border-right: solid 2px;
 
+
+
   .zx-photo {
     width: 216px;
     height: 220px;
@@ -36,6 +38,8 @@
     align-items: center;
     text-align: center;
     color: #000000;
+
+    border-radius: 8px;
   }
 
   .self-intro {
@@ -50,6 +54,7 @@
     background: linear-gradient(18deg, #93a3fb, #c797fd);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 123%;
   }
 }
 
@@ -81,12 +86,17 @@
   /* 内边距 */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: flex-start; */
+  /* 元素靠上方 */
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
   width: calc(100vw - 250px);
 
+  min-height: 100vh;
+
   color: rgba(255, 255, 255, 0.6);
+
 
   .emo-text-box {
     display: flex;
@@ -98,7 +108,7 @@
     font-weight: bold;
     margin: 20px;
     padding: calc(1vw + 1vh);
-    width: calc(0.7 * (100vw - 250px));
+    width: calc(0.5 * (100vw - 250px));
 
     border: solid 2px;
     border-image: linear-gradient(18deg, #9196db, #e2a0df) 1;
@@ -108,7 +118,7 @@
     &:hover {
       /* // background-color: #ffffff12; */
       border-image: linear-gradient(213deg, #3b48ff, #ff37f5) 1;
-      width: 80vw;
+      width: 70vw;
     }
   }
 }
@@ -117,18 +127,18 @@
 @media screen and (max-width: 600px) {
   .sidebar {
     width: 100vw;
-    height: auto;
+    height: 100vh;
     position: relative;
     margin: 0;
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    border: none;
 
-    border-image: linear-gradient(18deg, #939afb, #b18afa) 1;
+
     border-bottom: solid 2px;
+    border-image: linear-gradient(18deg, #9196db, #e2a0df) 1;
 
     .zx-photo {
       width: 220px;
