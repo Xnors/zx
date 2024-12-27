@@ -1,14 +1,20 @@
-@font-face {
-    font-family: 'deyihei';
-    src: url('./assets/SmileySans-Oblique.ttf');
-}
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
+@font-face {
+    font-family: 'deyihei';
+    src: url('../assets/SmileySans-Oblique.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
     background-color: rgba(15, 15, 17, 1);
 }

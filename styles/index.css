@@ -27,7 +27,7 @@
     width: 216px;
     height: 220px;
     object-fit: cover;
-    // background-color: rgba(255, 255, 255, 0.6);
+    /* // background-color: rgba(255, 255, 255, 0.6); */
     background: linear-gradient(18deg, #93abfb, #e482f8);
     margin: 15px;
 
@@ -37,6 +37,7 @@
     text-align: center;
     color: #000000;
   }
+
   .self-intro {
     display: block;
     /* 块级显示 */
@@ -45,7 +46,7 @@
     padding: 16px;
     /* 内边距 */
 
-    // 渐变色文字
+    /* // 渐变色文字 */
     background: linear-gradient(18deg, #93a3fb, #c797fd);
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -86,6 +87,7 @@
   width: calc(100vw - 250px);
 
   color: rgba(255, 255, 255, 0.6);
+
   .emo-text-box {
     display: flex;
     justify-content: center;
@@ -102,8 +104,9 @@
     border-image: linear-gradient(18deg, #9196db, #e2a0df) 1;
 
     transition: all 0.3s ease-in-out;
+
     &:hover {
-      // background-color: #ffffff12;
+      /* // background-color: #ffffff12; */
       border-image: linear-gradient(213deg, #3b48ff, #ff37f5) 1;
       width: 80vw;
     }
@@ -134,6 +137,7 @@
       background-color: white;
       margin: 15px;
     }
+
     a {
       float: left;
     }
@@ -152,6 +156,7 @@
     margin: 0;
 
     color: rgba(255, 255, 255, 0.6);
+
     .emo-text-box {
       color: #ffffffa9;
       font-size: 24px;
@@ -162,9 +167,10 @@
       border: solid 2px;
       border-radius: 10px;
       transition: all 0.3s ease-in-out;
+
       &:active {
         background-color: #555;
-        // width: 80vw;
+        /* // width: 80vw; */
       }
     }
   }

@@ -1,13 +1,35 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/.svg" /> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>周夏子朗</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/index.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="./styles/index.css" />
+  <link rel="stylesheet" href="./styles/root.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <script>
+    function jumpToEmo() {
+      // 跳转到 ./blogs/test0.html
+      window.location.href = "./blogs/test0.html";
+    }
+  </script>
+</head>
+
+<body>
+
+  <div class="sidebar">
+    <div class="zx-photo">我周夏哥的帅照</div>
+    <div class="self-intro">
+      自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍
+    </div>
+  </div>
+  <div class="main-content">
+    <h1>我EMO了</h1>
+    <div class="emo-text-box" onclick=jumpToEmo()>
+      emo短文示例
+    </div>
+  </div>
+
+</body>
+
 </html>
