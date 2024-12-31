@@ -55,6 +55,8 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 123%;
+
+    text-align: center;
   }
 }
 
@@ -97,21 +99,28 @@
 
   color: rgba(255, 255, 255, 0.6);
 
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeInLeft;
+
 
   .emo-text-box {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    flex-direction: column;
+
+    text-align: left;
+
     color: #ffffffa9;
     font-size: 24px;
     font-weight: bold;
-    margin: 20px;
+    margin-left: 6vw;
+    margin-right: 6vw;
     padding: calc(1vw + 1vh);
-    width: calc(0.5 * (100vw - 250px));
+    /* width: calc(0.5 * (100vw - 250px)); */
+    width: calc(100% - 12vw);
 
     border: solid 2px;
-    border-image: linear-gradient(18deg, #9196db, #e2a0df) 1;
+    border-image: linear-gradient(18deg, #fcfcff60, #fffaff60) 1;
 
     transition: all 0.3s ease-in-out;
 
@@ -120,6 +129,16 @@
       border-image: linear-gradient(213deg, #3b48ff, #ff37f5) 1;
       width: 70vw;
     }
+  }
+
+  h1 {
+    color: white;
+    margin-bottom: calc(1.2vw + 1.2vh);
+    margin-top: calc(0.75vw + 0.75vh);
+  }
+
+  p {
+    color: #ffffff99;
   }
 }
 
@@ -171,11 +190,8 @@
       color: #ffffffa9;
       font-size: 24px;
       font-weight: bold;
-      width: 66vw;
+      width: 82vw;
 
-      border-image: linear-gradient(18deg, #4e55bd, #ff00f2) 1;
-      border: solid 2px;
-      border-radius: 10px;
       transition: all 0.3s ease-in-out;
 
       &:active {
